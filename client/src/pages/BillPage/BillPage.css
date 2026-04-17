@@ -1,0 +1,149 @@
+.bill-page {
+  flex: 1;
+  padding: 2rem;
+  background: #f5f5f5;
+}
+
+.bill-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.bill-selector {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.bill-selector h2 {
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.table-selector {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.view-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.view-btn:hover:not(:disabled) {
+  background: #2980b9;
+}
+
+.view-btn:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.bill-section {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.bill-display h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.bill-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.bill-table th {
+  background: #ecf0f1;
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #bdc3c7;
+}
+
+.bill-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.bill-table .qty {
+  text-align: center;
+}
+
+.bill-table .price {
+  text-align: right;
+  font-family: 'Courier New', monospace;
+}
+
+.bill-total {
+  text-align: right;
+  padding: 1rem;
+  background: #ecf0f1;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.print-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.print-btn:hover {
+  background: #229954;
+}
+
+@media print {
+  .bill-page {
+    background: white;
+  }
+
+  .bill-container {
+    max-width: 100%;
+  }
+
+  .bill-selector {
+    display: none;
+  }
+
+  .bill-section {
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .print-btn {
+    display: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 1rem;
+  }
+}
