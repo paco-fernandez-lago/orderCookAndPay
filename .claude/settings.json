@@ -1,4 +1,4 @@
 {
-  "enabledMcpjsonServers": ["postgres"],
+  "enabledMcpjsonServers": ["postgres", "playwright"],
   "enableAllProjectMcpServers": true
 }
