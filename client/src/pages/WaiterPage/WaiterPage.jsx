@@ -28,7 +28,7 @@ export default function WaiterPage() {
           i.menu_item_id === item.id ? { ...i, quantity: i.quantity + 1 } : i
         );
       }
-      return [...prev, { menu_item_id: item.id, name: item.name, price: item.price, quantity: 1 }];
+      return [...prev, { menu_item_id: item.id, name: item.name, price: parseFloat(item.price), quantity: 1 }];
     });
   };
 

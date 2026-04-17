@@ -79,8 +79,8 @@ export default function BillPage() {
                     <tr key={idx}>
                       <td>{item.name}</td>
                       <td className="qty">{item.quantity}</td>
-                      <td className="price">${item.unit_price.toFixed(2)}</td>
-                      <td className="price">${item.line_total.toFixed(2)}</td>
+                      <td className="price">${parseFloat(item.unit_price).toFixed(2)}</td>
+                      <td className="price">${parseFloat(item.line_total).toFixed(2)}</td>
                     </tr>
                   ))}
                 </tbody>

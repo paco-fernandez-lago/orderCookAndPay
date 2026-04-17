@@ -14,7 +14,7 @@ export default function MenuGrid({ items, onAdd }) {
                 onClick={() => onAdd(item)}
               >
                 <div className="name">{item.name}</div>
-                <div className="price">${item.price.toFixed(2)}</div>
+                <div className="price">${parseFloat(item.price).toFixed(2)}</div>
               </button>
             ))}
           </div>
